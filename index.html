@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Forge UK | Custom 3D Printing</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --light: #f8fafc;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--light); color: var(--dark); }
+        header { background: var(--dark); color: white; padding: 2rem; text-align: center; }
+        
+        /* Gallery Grid */
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+        .gallery { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 1.5rem; 
+        }
+        .card { 
+            background: white; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card-img { 
+            height: 200px; 
+            background: #e2e8f0; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            font-size: 3rem;
+        }
+        .card-content { padding: 1.5rem; }
+        .btn { 
+            background: var(--primary); 
+            color: white; 
+            padding: 0.5rem 1rem; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        footer { text-align: center; padding: 3rem; background: #ddd; margin-top: 4rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>3D Forge UK</h1>
+    <p>Precision Engineering & Bespoke 3D Prints</p>
+</header>
+
+<div class="container">
+    <h2>Our Recent Builds</h2>
+    <div class="gallery">
+        <div class="card">
+            <div class="card-img">⚙️</div>
+            <div class="card-content">
+                <h3>Mechanical Gears</h3>
+                <p>High-tolerance nylon gears for industrial prototypes.</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">🛡️</div>
+            <div class="card-content">
+                <h3>Cosplay Armor</h3>
+                <p>Lightweight PLA+ chest plate with custom engravings.</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">🪴</div>
+            <div class="card-content">
+                <h3>Geometric Planter</h3>
+                <p>Eco-friendly wood-fill filament for home decor.</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 3D Forge UK. Built on GitHub Pages.</p>
+</footer>
+
+</body>
+</html>
